@@ -1,50 +1,111 @@
-# Welcome to your Expo app 👋
+# STASH_
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+> A fast, dark, personal note-taking app for capturing tasks, ideas, and creative scripts on the go.
 
-## Get started
+Built with React Native + Expo. Designed for people who think faster than they can write.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## Screenshots
 
-2. Start the app
+> *(Add screenshots of your app here)*
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## Features
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Tasks** — capture things you need to do, check them off when done
+- **Ideas** — dump your random thoughts, IT concepts, data science ideas
+- **Frames** — write scripts, scenes, and stories for your animated video projects
+- **Global Search** — search across all three sections at once
+- **Swipe to Delete** — swipe any card left to remove it
+- **Offline First** — everything stored locally on your device, no internet needed
+- **Dark Futuristic UI** — techy monospace aesthetic with cyan, violet, and amber accents
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## Tech Stack
 
-When you're ready, run:
+- [React Native](https://reactnative.dev/)
+- [Expo](https://expo.dev/)
+- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/) — local data storage
+- [EAS Build](https://docs.expo.dev/build/introduction/) — APK build system
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Node.js v18+
+- Expo Go app on your Android device
+
+### Installation
 
 ```bash
-npm run reset-project
+# Clone the repo
+git clone https://github.com/Mohith-151/Stash.git
+
+# Navigate into the project
+cd Stash
+
+# Install dependencies
+npm install
+npm install @react-native-async-storage/async-storage
+
+# Start the development server
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Scan the QR code with Expo Go on your Android device.
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## Building the APK
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+# Install EAS CLI
+npm install -g eas-cli
 
-## Join the community
+# Login to your Expo account
+eas login
 
-Join our community of developers creating universal apps.
+# Build the APK
+eas build -p android --profile preview
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Download the APK from the Expo dashboard and install it directly on your device.
+
+---
+
+## Project Structure
+
+```
+Stash/
+├── app/
+│   └── (tabs)/
+│       ├── index.tsx       # Main app — all three sections
+│       └── _layout.tsx     # Tab layout config
+├── assets/                 # Icons and images
+├── app.json                # Expo config
+└── package.json
+```
+
+---
+
+## Roadmap
+
+- [ ] Edit notes by tapping
+- [ ] Floating quick-add button
+- [ ] Home screen widget for Tasks
+- [ ] Cloud backup (Firebase)
+- [ ] Custom themes
+
+---
+
+## License
+
+MIT License — feel free to use, modify, and build on this.
+
+---
+
+*Built by [Mohith](https://github.com/Mohith-151) — from a simple idea on a morning walk to a real app on my phone, in one day.*
