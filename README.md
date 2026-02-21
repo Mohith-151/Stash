@@ -8,7 +8,9 @@ Built with React Native + Expo. Designed for people who think faster than they c
 
 ## Screenshots
 
-> *(Add screenshots of your app here)*
+![Tasks](screenshots/tasks.jpeg)
+![Ideas](screenshots/ideas.jpeg)
+![Frames](screenshots/frames.jpeg)
 
 ---
 
