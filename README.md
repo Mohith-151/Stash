@@ -8,8 +8,7 @@ Built with React Native + Expo. Designed for people who think faster than they c
 
 ## Screenshots
 
-<img src="screenshots/tasks.jpeg" width="250"/>
-<img src="screenshots/ideas.jpeg" width="250"/>
+<img src="screenshots/tasks.jpeg" width="250"/> <img src="screenshots/ideas.jpeg" width="250"/>
 <img src="screenshots/frames.jpeg" width="250"/>
 
 ---
